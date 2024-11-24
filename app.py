@@ -17,6 +17,10 @@ db.init_app(app)
 
 jwt = JWTManager(app)
 
+@app.route("/")
+def serve():
+    return send_from_directory(app.static_folder, "index.html")
+
 # Dummy user credentials
 USER = {'username': 'admin', 'password': 'admin'}
 
