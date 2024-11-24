@@ -1,0 +1,48 @@
+.file-list {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+.file-list h3 {
+    color: #333;
+}
+
+.file-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.file-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.file-list li .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.file-list li .actions a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.file-list li .actions button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.file-list li .actions button:hover {
+    background-color: #d32f2f;
+}
