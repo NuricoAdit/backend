@@ -7,7 +7,7 @@ import os
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'pdf', 'docx'}
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="/build", static_url_path="")
 CORS(app)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
